@@ -4,7 +4,8 @@ const J = (o, s = 200) => new Response(JSON.stringify(o), { status: s, headers: 
 const DEF = {
   settings: { name: "MASOUB STORE", tagline: "منتجات رقمية | اشتراكات مميزة | أسعار تنافسية", wa: DEFAULT_WA, currency: "ر.س", announce: "🔥 خصومات حصرية على الاشتراكات — استخدم كود MASOUB10", ig: "", sc: "", tt: "", x: "" },
   products: [
-    { id: "demo1", name: "اشتراك شهري (مثال)", price: 50, old: 70, cat: "📺 اشتراكات", desc: "هذا منتج تجريبي، عدّله أو احذفه من لوحة التحكم.", img: "", badge: "الأكثر طلبًا", inStock: true },
+    { id: "demo1", name: "اشتراك تجريبي (مثال)", price: 50, old: 0, cat: "📺 اشتراكات", desc: "هذا منتج تجريبي بباقات متعددة، عدّله أو احذفه من لوحة التحكم.", img: "", badge: "الأكثر طلبًا", inStock: true,
+      variants: [ { id: "v1", label: "شهر", price: 50, old: 70, inStock: true }, { id: "v3", label: "3 أشهر", price: 130, old: 180, inStock: true }, { id: "v6", label: "6 أشهر", price: 240, old: 350, inStock: true } ] },
     { id: "demo2", name: "اشتراك سنوي (مثال)", price: 400, old: 0, cat: "📺 اشتراكات", desc: "منتج تجريبي.", img: "", badge: "", inStock: true },
     { id: "demo3", name: "منتج رقمي (مثال)", price: 25, old: 0, cat: "💾 منتجات رقمية", desc: "منتج تجريبي.", img: "", badge: "جديد", inStock: true }
   ],
