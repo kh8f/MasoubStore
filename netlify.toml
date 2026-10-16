@@ -1,0 +1,6 @@
+[build]
+  publish = "public"
+  command = "sed -i \"s|__URL__|$URL|g\" public/index.html"
+
+[functions]
+  directory = "netlify/functions"
